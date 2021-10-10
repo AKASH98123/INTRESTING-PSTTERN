@@ -140,4 +140,37 @@ for i in range(1,n+1):
     print()
                                 
                                    
-            
+######################################################################################################
+
+
+
+num=int(input("ENTER THE NUMBER OF ROWS "))
+l1=[[0 for x in range(num)] for y in range(num)]
+low=0
+n=1
+high=num-1
+count=int((num+1)/2)
+for i in range(count):
+    for j in range(low,high+1):
+        l1[low][j]=n
+        n=n+1
+    #print 1 to 5
+    for j in range(low+1,high+1):
+        l1[j][high]=n
+        n=n+1
+    #print 6 to 9
+    for j in range(high-1,low-1,-1):
+        l1[high][j]=n
+        n=n+1
+    #print 10 to 13
+    for j in range(high-1,low,-1):
+        l1[j][low]=n
+        n=n+1
+    #print 13 to 15
+    low=low+1
+    high=high-1
+
+for i in range(num):
+    for j in range(num):
+        print(l1[i][j],end="\t")
+    print()
