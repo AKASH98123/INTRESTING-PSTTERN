@@ -12,4 +12,18 @@ for i in range(n):
         else:
             print(x+n-i,end=" ")        
     print()
+    
+    ##########################################################
+    
+    
+n=int(input("ENTER THE NUMBER OF ROWS :"))
+for i in range(n):
+    x=i+1
+    for j in range(i+1):
+        y=n-j-1
+        print(x,end=" ")
+        x=x+y
+    print()
+
+
             
