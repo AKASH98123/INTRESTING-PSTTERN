@@ -58,5 +58,43 @@ for i in range(1,n):
             k=k+1
             print(k,end=" ")
     print()
+    
+    
+    
+    ####################################################################################
+    
+    
+    n=int(input("ENTER THE NUMBER OF ROWS"))
+
+for i in range(1,n+1):
+    k=ord("a")+n-1
+    x=ord("a")+n+1-i
+    for j in range(1,n-i+1):
+        print(end=" ")
+    for j in range(1,i+1):
+        print(chr(k),end="")
+        k=k-1
+
+
+    for j in range(2,i+1):
+        print(chr(x),end="")
+        x=x+1
+    print()
+
+for p in range(n-1,0,-1):
+    k=ord("a")+n-1
+    x=ord("a")+n+1-p
+    for j in range(1,n-p+1):
+        print(end=" ")
+    for j in range(2,p+2):
+        print(chr(k),end="")
+        k=k-1
+    for j in range(1,p):
+        print(chr(x),end="")
+        x=x+1
+    print()            
+
+
+
                                    
             
